@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNameGame"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="GAME LOTO"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#f20"/>
+
+    <EditText
+        android:id="@+id/edtEnter1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Nhập số thứ nhất"
+        android:inputType="number"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/edtEnter2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Nhập số thứ hai"
+        android:inputType="number"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/btRandom"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="RANDOM"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:fillViewport="true">
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btReset"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="RESET"
+        android:layout_gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
